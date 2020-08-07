@@ -24,14 +24,23 @@ end
 
 #*** The user enters their name, which gets added to the list of names on line.
 
-def take_a_number(katz_deli,name)
-  katz_deli.push(name)
+# def take_a_number(katz_deli,name)
+#   katz_deli.push(name)
   
-  #*** The user is greeted and is informed of their place in line.
+#   #*** The user is greeted and is informed of their place in line.
   
-  puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
-end
+#   puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
+# end
 
+counter=0
+
+def take_a_number(katz_deli)
+  counter+=1
+  katz_deli.push(counter)
+  puts "Welcome! You are number #{counter} in line."
+end
+  
+  
 
 def now_serving(katz_deli)
   
